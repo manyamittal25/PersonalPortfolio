@@ -900,15 +900,31 @@ header .navbar ul li a:hover {
     padding-left: 60px;
     padding-right: 20px;
     margin-bottom: 2.5rem;
+    left: 0 !important;
   }
   .experience .container.right {
     left: 0;
-    padding-left: 20px;
-    padding-right: 60px;
+    padding-left: 60px;
+    padding-right: 20px;
   }
   .experience .container::after, .experience .container.right::after {
     left: 0;
     right: auto;
+  }
+  .experience .content {
+    border-left: 6px solid #2506ad !important;
+    border-right: none !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .experience .tag {
+    font-size: 1.1rem;
+  }
+  .experience .desc h3 {
+    font-size: 1.3rem;
+  }
+  .experience .desc p, .experience .desc ul li {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -919,15 +935,24 @@ header .navbar ul li a:hover {
     padding: 0 0.5rem;
   }
   .experience .container {
-    padding-left: 30px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
   }
   .experience .container.right {
-    padding-left: 10px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 5px;
   }
   .experience .content {
     padding: 1.2rem 1.2rem 1rem 1.2rem;
+  }
+  .experience .tag {
+    font-size: 1rem;
+  }
+  .experience .desc h3 {
+    font-size: 1.1rem;
+  }
+  .experience .desc p, .experience .desc ul li {
+    font-size: 0.95rem;
   }
 }
 /* experience media queries ends */
